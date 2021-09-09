@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Practica6Jesus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="Contenedor Raiz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZUv-Z8-Ikm" userLabel="Contenedor Bodega">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="448"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bodega XYZ123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUy-Tk-Dc2" userLabel="Etiqueta Nombre Bodega">
+                                        <rect key="frame" x="97" y="49" width="220" height="37"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="warehouse" translatesAutoresizingMaskIntoConstraints="NO" id="Vno-Tb-WRI" userLabel="Icono Bodega">
+                                        <rect key="frame" x="32" y="118" width="350" height="298"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.78481012658227844" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Vno-Tb-WRI" secondAttribute="bottom" constant="32" id="9bh-nk-WDM"/>
+                                    <constraint firstItem="Vno-Tb-WRI" firstAttribute="top" secondItem="XUy-Tk-Dc2" secondAttribute="bottom" constant="32" id="XOA-hm-Uf0"/>
+                                    <constraint firstItem="Vno-Tb-WRI" firstAttribute="leading" secondItem="ZUv-Z8-Ikm" secondAttribute="leading" constant="32" id="ekx-zE-CPi"/>
+                                    <constraint firstAttribute="trailing" secondItem="Vno-Tb-WRI" secondAttribute="trailing" constant="32" id="jPn-Ve-dlF"/>
+                                    <constraint firstItem="XUy-Tk-Dc2" firstAttribute="centerX" secondItem="ZUv-Z8-Ikm" secondAttribute="centerX" id="o0P-5b-0Df"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MUo-ps-LjU" userLabel="Contenedor Temperatura">
+                                <rect key="frame" x="0.0" y="448" width="414" height="448"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24°C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4C-NT-sVD" userLabel="Etiqueta Termometro">
+                                        <rect key="frame" x="96.5" y="139" width="221" height="120"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                        <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="termometro" translatesAutoresizingMaskIntoConstraints="NO" id="b0r-UO-AHK">
+                                        <rect key="frame" x="290" y="8" width="116" height="125.5"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.93195297456071668" blue="0.65940192285889343" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="O4C-NT-sVD" firstAttribute="centerX" secondItem="MUo-ps-LjU" secondAttribute="centerX" id="90Z-yw-b9L"/>
+                                    <constraint firstItem="b0r-UO-AHK" firstAttribute="width" secondItem="MUo-ps-LjU" secondAttribute="width" multiplier="0.28" id="GU5-Ts-F9N"/>
+                                    <constraint firstItem="O4C-NT-sVD" firstAttribute="centerY" secondItem="MUo-ps-LjU" secondAttribute="centerY" constant="-25" id="Kac-46-egT"/>
+                                    <constraint firstItem="b0r-UO-AHK" firstAttribute="top" secondItem="MUo-ps-LjU" secondAttribute="topMargin" id="Y14-di-MSE"/>
+                                    <constraint firstItem="b0r-UO-AHK" firstAttribute="height" secondItem="MUo-ps-LjU" secondAttribute="height" multiplier="0.28" id="iB5-tu-j1E"/>
+                                    <constraint firstItem="b0r-UO-AHK" firstAttribute="trailing" secondItem="MUo-ps-LjU" secondAttribute="trailingMargin" id="k8b-WC-89A"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="XUy-Tk-Dc2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="17h-Qc-GRs"/>
+                            <constraint firstItem="ZUv-Z8-Ikm" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="CV9-Gr-ZpY"/>
+                            <constraint firstItem="ZUv-Z8-Ikm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="LNU-J2-CPH"/>
+                            <constraint firstItem="MUo-ps-LjU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="M3W-pQ-Xk7"/>
+                            <constraint firstItem="MUo-ps-LjU" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="VBP-la-fJq"/>
+                            <constraint firstItem="ZUv-Z8-Ikm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Xri-Lv-bpb"/>
+                            <constraint firstItem="MUo-ps-LjU" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="YRE-Rq-BAO"/>
+                            <constraint firstAttribute="bottom" secondItem="MUo-ps-LjU" secondAttribute="bottom" id="tTF-Xx-afJ"/>
+                            <constraint firstItem="ZUv-Z8-Ikm" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="wLX-sd-smC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="termometro" width="512" height="512"/>
+        <image name="warehouse" width="512" height="512"/>
+    </resources>
+</document>
